@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 512 512">
+  <!-- Ticker app icon — black T mark on Flatty Yellow rounded square -->
+  <rect width="512" height="512" fill="#FCE300"/>
+  <g transform="translate(142.25 116) scale(3.50446)" fill="#000000">
+    <path d="M64.917,14.981h-24.968V0h24.968v14.981ZM24.968,14.981H0V0h24.968v14.981ZM39.949,79.898h-14.981V14.981h14.981v64.917Z"/>
+  </g>
+</svg>

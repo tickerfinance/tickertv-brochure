@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="56" viewBox="0 0 160 56">
+  <!-- Sparkline — repeat (stacks). Path returns to mid-height on both edges => seamless on X. -->
+  <polyline points="0,28.0 24,14 46,24.0 70,40 92,20 116,34.0 140,30 160,28.0" fill="none" stroke="#FCE300" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="0" y1="55.5" x2="160" y2="55.5" stroke="#FCE300" stroke-width="1" opacity="0.25"/>
+</svg>

@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<title>Ticker TV: IR Video & Social Media | Copia</title>
+<meta name="description" content="Ticker TV is a full-service IR video and social media package by Copia: CEO interviews, Fireside Chats, Town Hall Q&As and event coverage for listed companies and fund managers.">
+<link rel="icon" href="assets/icon-app.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&family=Inter:wght@400;500;600&family=Urbanist:wght@500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#000; --surface:#131313; --surface-2:#1e1e1e; --surface-3:#292929;
+  --rule:#434343; --rule-subtle:#2a2a2a;
+  --ink-1:#f5f5f5; --ink-2:#a5a5a5; --ink-3:#767676;
+  --yellow:#fce300; --sapphire:#002663; --green:#00be4a;
+  --periwinkle:#b6cdff; --ecru:#f5f2eb;
+  --maxw:1140px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);color:var(--ink-1);
+  font-family:'Inter',system-ui,sans-serif;line-height:1.6;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+a{color:inherit}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+.mono{font-family:'DM Mono',monospace}
+.disp{font-family:'Lexend',sans-serif}
+
+/* ---------- eyebrow / section labels ---------- */
+.eyebrow{
+  font-family:'DM Mono',monospace;font-size:12px;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--yellow);display:inline-flex;align-items:center;gap:10px;
+}
+.eyebrow.muted{color:var(--ink-3)}
+
+/* ---------- top nav ---------- */
+.nav{
+  position:sticky;top:0;z-index:50;background:rgba(0,0,0,.72);
+  backdrop-filter:saturate(160%) blur(14px);border-bottom:1px solid var(--rule-subtle);
+}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:70px}
+.brandmark{display:flex;align-items:center;gap:9px;text-decoration:none}
+.brandmark img{height:20px;display:block}
+.brandmark .tv{
+  font-family:'Lexend',sans-serif;font-weight:700;font-size:13px;letter-spacing:.06em;
+  color:#000;background:var(--yellow);border-radius:4px;
+  display:inline-flex;align-items:center;justify-content:center;height:20px;padding:0 7px;
+}
+.nav-links{display:flex;gap:30px;align-items:center}
+.nav-links a{
+  font-family:'DM Mono',monospace;font-size:12.5px;letter-spacing:.04em;color:var(--ink-2);
+  text-decoration:none;transition:color .18s}
+.nav-links a:hover{color:var(--ink-1)}
+.nav-cta{
+  font-family:'Lexend',sans-serif!important;font-weight:600;font-size:13px!important;
+  letter-spacing:.02em!important;color:#000!important;background:var(--yellow);
+  padding:9px 18px;border-radius:8px;transition:transform .18s,background .18s}
+.nav-cta:hover{transform:translateY(-1px)}
+@media(max-width:760px){.nav-links a:not(.nav-cta){display:none}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;padding:110px 0;overflow:hidden;min-height:600px;display:flex;align-items:center;border-bottom:1px solid var(--rule-subtle)}
+.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;pointer-events:none}
+.hero-scrim{position:absolute;inset:0;z-index:0;pointer-events:none;
+  background:
+    linear-gradient(90deg,rgba(0,0,0,.95) 0%,rgba(0,0,0,.78) 32%,rgba(0,0,0,.34) 58%,rgba(0,0,0,.58) 100%),
+    linear-gradient(0deg,rgba(0,0,0,.82) 0%,rgba(0,0,0,0) 42%);}
+.hero .wrap{position:relative;z-index:1;width:100%}
+.hero h1{
+  font-family:'Lexend',sans-serif;font-weight:600;letter-spacing:-.03em;line-height:1.02;
+  font-size:clamp(34px,5.4vw,62px);margin:26px 0 0;max-width:14ch;
+}
+.hero h1 .hl{color:var(--yellow)}
+.hero .lede{
+  font-size:clamp(15px,1.7vw,18px);color:var(--ink-2);max-width:46ch;margin-top:24px;line-height:1.6;
+}
+
+/* ---------- trusted-by logo banner ---------- */
+.trusted{border-bottom:1px solid var(--rule-subtle);padding:46px 0;overflow:hidden;background:var(--bg)}
+.marquee{position:relative;width:100%;overflow:hidden;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+.marquee-track{display:flex;align-items:center;gap:70px;width:max-content;animation:marquee 44s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.marquee-track img{height:26px;width:auto;max-width:172px;object-fit:contain;flex:none;
+  opacity:.5;filter:brightness(0) invert(1);transition:opacity .2s}
+.marquee-track img:hover{opacity:1}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){
+  .marquee-track{animation:none;flex-wrap:wrap;justify-content:center;width:auto;gap:44px 60px;padding:0 24px}
+  .marquee-track .dup{display:none}
+}
+
+/* ---------- generic section ---------- */
+section{padding:92px 0}
+.sec-head{max-width:720px;margin-bottom:52px}
+.sec-head h2{
+  font-family:'Lexend',sans-serif;font-weight:600;letter-spacing:-.02em;line-height:1.06;
+  font-size:clamp(30px,4.4vw,46px);margin-top:18px}
+.sec-head p{color:var(--ink-2);font-size:17px;margin-top:18px;max-width:60ch}
+
+/* ---------- who / prose ---------- */
+.prose p{color:var(--ink-2);font-size:17px;line-height:1.72;max-width:none;margin-bottom:18px}
+.prose p b{color:var(--ink-1);font-weight:600}
+#who .sec-head{max-width:none}
+#who .who-row{display:grid;gap:52px;align-items:center;margin-top:48px;grid-template-columns:minmax(0,1fr) minmax(0,0.86fr)}
+#who .who-row.reverse{grid-template-columns:minmax(0,0.86fr) minmax(0,1fr)}
+#who .who-row .prose{margin:0}
+.who-media{margin:0}
+.who-media img{display:block;width:100%;border-radius:8px;border:1px solid var(--rule-subtle)}
+.who-media-stack{display:grid;gap:18px}
+@media(max-width:820px){#who .who-row,#who .who-row.reverse{grid-template-columns:1fr;gap:26px}}
+
+/* ---------- offer cards ---------- */
+.offer-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+@media(max-width:820px){.offer-grid{grid-template-columns:1fr}}
+.offer{
+  background:linear-gradient(180deg,var(--surface),#0e0e0e);
+  border:1px solid var(--rule-subtle);border-radius:8px;padding:34px 32px 36px;
+  position:relative;overflow:hidden;isolation:isolate;
+  transition:border-color .25s,transform .25s,box-shadow .25s}
+/* top accent line reveals on hover */
+.offer::before{content:"";position:absolute;left:0;right:0;top:0;height:2px;
+  background:linear-gradient(90deg,var(--yellow),transparent 55%);opacity:0;transition:opacity .25s;z-index:2}
+/* corner brand-pattern texture */
+.offer .pat{position:absolute;top:0;right:0;bottom:0;width:58%;z-index:0;pointer-events:none;opacity:.14;
+  background-repeat:repeat;background-size:56px;transition:opacity .25s;
+  -webkit-mask-image:linear-gradient(to left,#000 4%,transparent 82%);
+  mask-image:linear-gradient(to left,#000 4%,transparent 82%)}
+/* icon tile */
+.offer .ico{position:relative;z-index:1;width:48px;height:48px;border-radius:9px;
+  background:rgba(252,227,0,.12);color:var(--yellow);display:flex;align-items:center;justify-content:center;
+  transition:background .25s,color .25s,transform .25s}
+.offer .ico svg{width:25px;height:25px}
+.offer .kicker{position:relative;z-index:1;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--yellow);margin-top:22px}
+.offer h3{position:relative;z-index:1;font-family:'Lexend',sans-serif;font-weight:600;font-size:25px;
+  margin:9px 0 14px;letter-spacing:-.01em}
+.offer p{position:relative;z-index:1;color:var(--ink-2);font-size:15.5px;line-height:1.66;max-width:46ch}
+
+/* ---------- video section ---------- */
+.videos{background:var(--surface);border-top:1px solid var(--rule-subtle);border-bottom:1px solid var(--rule-subtle)}
+.vgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+@media(max-width:900px){.vgrid{grid-template-columns:1fr}}
+.vcard{background:var(--bg);border:1px solid var(--rule-subtle);border-radius:8px;overflow:hidden;display:flex;flex-direction:column;transition:border-color .2s}
+.vcard:hover{border-color:var(--rule)}
+.vcard.feature{grid-column:1/-1}
+.vmeta{padding:24px 26px 26px}
+.vtag{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--yellow);display:inline-block;margin-bottom:12px}
+.vmeta h3{font-family:'Lexend',sans-serif;font-weight:600;font-size:20px;letter-spacing:-.01em;line-height:1.25}
+.vmeta .sub{color:var(--ink-2);font-size:14.5px;margin-top:8px;line-height:1.55}
+.vstats{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.chip{
+  font-family:'DM Mono',monospace;font-size:12px;letter-spacing:.03em;color:var(--ink-1);
+  background:var(--surface-2);border:1px solid var(--rule-subtle);border-radius:6px;padding:6px 13px}
+.chip b{color:var(--yellow);font-weight:500}
+
+/* poster-image video card */
+.vcard .poster{position:relative;display:block;aspect-ratio:16/9;overflow:hidden;background:#0a0a0a}
+.vcard .poster img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  transition:transform .35s cubic-bezier(.16,1,.3,1)}
+.vcard .poster:hover img{transform:scale(1.03)}
+.vcard .poster .plabel{
+  position:absolute;left:14px;top:14px;z-index:1;font-family:'DM Mono',monospace;font-size:11px;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--ink-1);
+  background:rgba(0,0,0,.6);padding:5px 10px;border-radius:5px}
+.watch-link{
+  display:inline-flex;align-items:center;gap:8px;margin-top:16px;font-family:'Lexend',sans-serif;
+  font-weight:600;font-size:14px;color:var(--yellow);text-decoration:none}
+.watch-link:hover{text-decoration:underline}
+/* modern sliding arrow */
+.arw{width:1.05em;height:1.05em;flex:none;transition:transform .2s cubic-bezier(.16,1,.3,1)}
+.watch-link:hover .arw,.cta:hover .arw{transform:translateX(4px)}
+
+/* ---------- testimonials ---------- */
+.quotes{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+@media(max-width:820px){.quotes{grid-template-columns:1fr}}
+.quote{
+  position:relative;overflow:hidden;isolation:isolate;display:flex;flex-direction:column;
+  background:linear-gradient(180deg,var(--surface),#0e0e0e);
+  border:1px solid var(--rule-subtle);border-radius:8px;padding:36px 34px;
+  transition:border-color .25s,transform .25s,box-shadow .25s}
+.quote::before{content:"";position:absolute;left:0;right:0;top:0;height:2px;
+  background:linear-gradient(90deg,var(--yellow),transparent 55%);opacity:0;transition:opacity .25s;z-index:2}
+/* large ghosted quote mark */
+.quote .mark{position:absolute;top:-8px;right:22px;z-index:0;pointer-events:none;user-select:none;
+  font-family:'Lexend',sans-serif;font-weight:700;font-size:150px;line-height:1;color:transparent;
+  -webkit-text-stroke:1px rgba(255,255,255,.06);transition:-webkit-text-stroke-color .3s}
+.quote p{position:relative;z-index:1;font-size:16.5px;line-height:1.66;color:var(--ink-1);margin:0 0 24px;flex:1}
+.quote .who{position:relative;z-index:1;display:flex;align-items:center;gap:14px;
+  border-top:1px solid var(--rule-subtle);padding-top:18px}
+.quote .avatar{flex:0 0 42px;width:42px;height:42px;border-radius:8px;
+  background:rgba(252,227,0,.12);color:var(--yellow);display:flex;align-items:center;justify-content:center;
+  font-family:'Lexend',sans-serif;font-weight:600;font-size:15px;transition:background .25s,color .25s}
+.quote .avatar svg{width:20px;height:20px}
+.quote .who .name{font-family:'Lexend',sans-serif;font-weight:600;font-size:15px}
+.quote .who .role{color:var(--ink-3);font-size:12.5px;font-family:'DM Mono',monospace;letter-spacing:.02em;margin-top:4px;line-height:1.4}
+/* youtube variant */
+.quote.yt{background:linear-gradient(160deg,#151505,#0e0e0e);border-color:#3a3400}
+.quote.yt .avatar svg{margin-left:2px}
+/* accent (periwinkle) variant */
+.quote.accent{background:linear-gradient(160deg,#0a1330,#0b0f18);border-color:#16224a;justify-content:center}
+.quote.accent::before{background:linear-gradient(90deg,var(--periwinkle),transparent 55%)}
+.quote.accent .mark{-webkit-text-stroke-color:rgba(182,205,255,.10)}
+.quote.accent p{font-family:'Lexend',sans-serif;font-weight:500;font-size:20px;line-height:1.4}
+.quote.accent .who{border-color:#16224a}
+.quote.accent .avatar{background:rgba(182,205,255,.14);color:var(--periwinkle)}
+.quote.accent .who .name{color:var(--periwinkle)}
+
+/* ---------- team ---------- */
+.team-grid{display:grid;grid-template-columns:repeat(2,minmax(0,300px));gap:24px}
+@media(max-width:640px){.team-grid{grid-template-columns:1fr;max-width:340px}}
+.member{transition:transform .3s cubic-bezier(.16,1,.3,1)}
+.member:hover .photo{transform:translateY(-4px)}
+.member .photo{aspect-ratio:3/4;overflow:hidden;background:var(--surface-2);border-radius:8px;margin-bottom:18px;transition:transform .3s cubic-bezier(.16,1,.3,1)}
+.member .photo img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
+.member .info{padding:0}
+.member h3{font-family:'Lexend',sans-serif;font-weight:600;font-size:19px;letter-spacing:-.01em;line-height:1.2}
+.member .title{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--yellow);margin:7px 0 13px}
+.member p{color:var(--ink-2);font-size:14px;line-height:1.62}
+.member a{color:var(--periwinkle);text-decoration:none}
+.member a:hover{text-decoration:underline}
+
+/* ---------- pricing CTA ---------- */
+.pricing{padding:0 0 100px}
+.pricing .panel{
+  position:relative;overflow:hidden;isolation:isolate;border-radius:8px;
+  background:linear-gradient(180deg,var(--surface),#0e0e0e);
+  border:1px solid var(--rule-subtle);
+  padding:60px 56px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:44px;
+  transition:border-color .25s,box-shadow .25s}
+.pricing .panel:hover{border-color:#5c5626;box-shadow:0 26px 64px -32px rgba(252,227,0,.35)}
+.pricing .panel::before{content:"";position:absolute;left:0;right:0;top:0;height:2px;z-index:2;
+  background:linear-gradient(90deg,var(--yellow),transparent 55%)}
+.pricing .panel .grid-bg{
+  position:absolute;inset:0;z-index:0;opacity:.16;pointer-events:none;
+  background:url('assets/patterns/tick-grid.svg') repeat;background-size:48px}
+.pricing .panel .glow{position:absolute;right:-130px;top:-140px;width:480px;height:480px;z-index:0;pointer-events:none;
+  background:radial-gradient(circle,rgba(252,227,0,.16),transparent 62%)}
+.pricing .panel .pricing-copy,.pricing .panel .cta{position:relative;z-index:1}
+.pricing .kicker{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--yellow);display:inline-flex;align-items:center;gap:10px;margin-bottom:18px}
+.pricing h2{font-family:'Lexend',sans-serif;font-weight:700;font-size:clamp(28px,4vw,44px);letter-spacing:-.02em;line-height:1.05;max-width:18ch;color:var(--ink-1)}
+.pricing h2 .hl{color:var(--yellow)}
+.pricing p{font-size:16.5px;line-height:1.65;max-width:54ch;margin-top:18px;color:var(--ink-2)}
+.pricing .cta{background:var(--yellow);color:#000;font-family:'Lexend',sans-serif;font-weight:600;font-size:16px;
+  padding:17px 32px;border-radius:8px;text-decoration:none;display:inline-flex;align-items:center;gap:9px;white-space:nowrap;
+  transition:transform .2s,box-shadow .2s,background .2s}
+.pricing .cta:hover{transform:translateY(-2px);background:#ffe920;box-shadow:0 14px 32px -12px rgba(252,227,0,.6)}
+
+/* ---------- footer ---------- */
+footer{border-top:1px solid var(--rule-subtle);padding:60px 0 70px}
+footer .top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:30px;align-items:flex-start}
+footer .col h4{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);margin-bottom:14px}
+footer .col a{display:block;color:var(--ink-2);text-decoration:none;font-size:14.5px;margin-bottom:9px;font-family:'Inter',sans-serif}
+footer .col a:hover{color:var(--ink-1)}
+footer .social .soc-row{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+footer .social .soc-name{font-family:'Inter',sans-serif;font-size:14px;color:var(--ink-2);min-width:118px}
+footer .social a{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;margin:0;
+  border-radius:7px;background:var(--surface-2);border:1px solid var(--rule-subtle);color:var(--ink-2);
+  transition:color .2s,background .2s,border-color .2s,transform .2s}
+footer .social a:hover{color:#000;background:var(--yellow);border-color:var(--yellow);transform:translateY(-2px)}
+footer .social a svg{width:15px;height:15px}
+footer .foot-lockup{display:flex;align-items:center;gap:9px;margin-bottom:16px}
+footer .foot-lockup img{height:22px;display:block}
+footer .foot-lockup .tv{font-family:'Lexend',sans-serif;font-weight:700;font-size:14px;letter-spacing:.06em;color:#000;background:var(--yellow);border-radius:4px;display:inline-flex;align-items:center;justify-content:center;height:22px;padding:0 8px}
+footer .brand p{color:var(--ink-3);font-size:13.5px;max-width:34ch;line-height:1.6}
+footer .base{margin-top:48px;padding-top:26px;border-top:1px solid var(--rule-subtle);display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px;font-family:'DM Mono',monospace;font-size:12px;color:var(--ink-3);letter-spacing:.03em}
+
+.divider-note{font-family:'DM Mono',monospace;font-size:12.5px;color:var(--ink-3);letter-spacing:.04em;margin-top:18px}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="wrap">
+    <a class="brandmark" href="#top">
+      <img src="assets/logo-white.svg" alt="Ticker">
+      <span class="tv">TV</span>
+    </a>
+    <div class="nav-links">
+      <a href="#offer">Services</a>
+      <a href="#work">Case studies</a>
+      <a href="#voices">Testimonials</a>
+      <a href="#team">Team</a>
+      <a class="nav-cta" href="#pricing">Get a package</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <video class="hero-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
+    <source src="assets/media/ggp-hero.mp4" type="video/mp4">
+  </video>
+  <div class="hero-scrim"></div>
+  <div class="wrap">
+    <span class="eyebrow">IR Video &amp; Social Media · by Copia</span>
+    <h1>Investor stories, <span class="hl">told on camera.</span></h1>
+    <p class="lede">Ticker TV is a full-service IR video and social media package, designed to support all your online IR needs, from as-live CEO interviews to Town Hall Q&amp;As and event coverage.</p>
+  </div>
+</header>
+
+<!-- TRUSTED BY -->
+<section class="trusted" aria-label="Trusted by professionals">
+  <div class="marquee">
+    <div class="marquee-track">
+      <img src="assets/logos/greatland-resources.svg" alt="Greatland Resources">
+      <img src="assets/logos/orosur-mining.svg" alt="Orosur Mining">
+      <img src="assets/logos/cleantech-lithium.svg" alt="CleanTech Lithium">
+      <img src="assets/logos/sound-energy.svg" alt="Sound Energy">
+      <img src="assets/logos/cora-gold.svg" alt="Cora Gold">
+      <img src="assets/logos/rainbow-rare-earths.svg" alt="Rainbow Rare Earths">
+      <img src="assets/logos/india-capital-growth-fund.svg" alt="India Capital Growth Fund">
+      <img src="assets/logos/retailbook.svg" alt="RetailBook">
+      <img src="assets/logos/helium-one.webp" alt="Helium One">
+      <img class="dup" src="assets/logos/greatland-resources.svg" alt="" aria-hidden="true">
+      <img class="dup" src="assets/logos/orosur-mining.svg" alt="" aria-hidden="true">
+      <img class="dup" src="assets/logos/cleantech-lithium.svg" alt="" aria-hidden="true">
+      <img class="dup" src="assets/logos/sound-energy.svg" alt="" aria-hidden="true">
+      <img class="dup" src="assets/logos/cora-gold.svg" alt="" aria-hidden="true">
+      <img class="dup" src="assets/logos/rainbow-rare-earths.svg" alt="" aria-hidden="true">
+      <img class="dup" src="assets/logos/india-capital-growth-fund.svg" alt="" aria-hidden="true">
+      <img class="dup" src="assets/logos/retailbook.svg" alt="" aria-hidden="true">
+      <img class="dup" src="assets/logos/helium-one.webp" alt="" aria-hidden="true">
+    </div>
+  </div>
+</section>
+
+<!-- WHO -->
+<section id="who">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow muted">Who are Copia?</span>
+      <h2>A London digital media company built to support the financial calendar – and more.</h2>
+    </div>
+    <div class="who-row">
+      <div class="prose">
+        <p>Copia is a London-based digital media company. We are <b>trusted to create and deliver live-streamed and pre-recorded video and audio events</b>. These often take place at points of extreme pressure in the financial calendar for those involved, when quality support, rapid turnaround and accurate execution are essential.</p>
+      </div>
+      <figure class="who-media">
+        <img src="assets/media/studio-setup.jpg" alt="Ticker TV interview being filmed on a multi-camera studio set" loading="lazy">
+      </figure>
+    </div>
+    <div class="who-row reverse">
+      <div class="who-media-stack">
+        <figure class="who-media"><img src="assets/media/event-audience.jpg" alt="Engaged audience at a Copia-produced investor event" loading="lazy"></figure>
+      </div>
+      <div class="prose">
+        <p>We have a wide range of services that allow companies and investment firms from different sectors and sizes to communicate effectively online and reinforce their investment case. Some examples include video and audio interviews, company events and B2B/B2C corporate videos.</p>
+        <p>We are passionate about our work and enjoy working with companies directly or through their corporate advisors. Building strong relationships with all involved is key to the delivery of excellent digital content.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OFFER -->
+<section id="offer">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Our full-service offer</span>
+      <h2>Everything your online IR needs, in one team.</h2>
+      <p>Ticker TV is a full-service IR video and social media package. We work with leading listed businesses and Fund Management companies. Our experienced team has deep financial knowledge and serious technical expertise.</p>
+    </div>
+    <div class="offer-grid">
+      <div class="offer">
+        <span class="pat" style="background-image:url('assets/patterns/waveform.svg')"></span>
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M10.2 7.6l4 2.9-4 2.9z" fill="currentColor" stroke="none"/><path d="M8 21h8M12 17v4"/></svg></span>
+        <div class="kicker">01 · Interviews</div>
+        <h3>Ticker TV</h3>
+        <p>We specialise in online CEO and senior management video interviews. These are recorded as-live on special software for higher definition, released on our Ticker TV YouTube channel and distributed widely on social media. We put an RNS release in context or help reinforce key strategic messages with authority.</p>
+      </div>
+      <div class="offer">
+        <span class="pat" style="background-image:url('assets/patterns/sparkline.svg')"></span>
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7A8.5 8.5 0 1 1 21 11.5z"/><path d="M8.5 11h7M8.5 14h4.5"/></svg></span>
+        <div class="kicker">02 · Strategic</div>
+        <h3>Fireside Chat</h3>
+        <p>Longer, less news-driven, more strategic interviews. Alongside an active X or LinkedIn account, these fill a lot of gaps in an annual comms strategy. Long-term shareholders find them particularly useful, as they invariably include lots of fresh information, and new investors find more than enough to Watchlist the company.</p>
+      </div>
+      <div class="offer">
+        <span class="pat" style="background-image:url('assets/patterns/nodes.svg')"></span>
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+        <div class="kicker">03 · Community</div>
+        <h3>Town Hall Meetings</h3>
+        <p>Live shareholder Q&amp;As that build community and trust. When we work with AIM &amp; ASX-dual-listed gold miner Greatland Resources, several hundred watch live and 6,000+ view the recording. 160 long-term shareholders attended the latest Town Hall Meeting from across the UK.</p>
+      </div>
+      <div class="offer">
+        <span class="pat" style="background-image:url('assets/patterns/movers.svg')"></span>
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49M7.76 16.24a6 6 0 0 1 0-8.49M19.07 4.93a10 10 0 0 1 0 14.14M4.93 19.07a10 10 0 0 1 0-14.14"/></svg></span>
+        <div class="kicker">04 · Events</div>
+        <h3>Event Coverage</h3>
+        <p>Copia produce major annual financial and tech events such as the Investor Summit, GopherCon and RustNation. The quality of our event video content is second to none: superb room lighting and AV, every speaker and panel filmed and released afterwards, with compelling marketing videos and short interviews.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEOS -->
+<section class="videos" id="work">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Case studies · on camera</span>
+      <h2>See the work. See the numbers.</h2>
+      <p>A selection of Ticker TV interviews, Town Hall Q&amp;As and Investor Summit sessions, with the real engagement they earned.</p>
+    </div>
+
+    <div class="vgrid">
+
+      <!-- Feature: Greatland Town Hall -->
+      <div class="vcard feature">
+        <a class="poster" href="https://www.youtube.com/watch?v=sSyRyxzMNnE" target="_blank" rel="noopener" aria-label="Watch Greatland Town Hall Q&amp;A on YouTube">
+          <img src="assets/media/ir-interview.jpg" alt="">
+        </a>
+        <div class="vmeta">
+          <span class="vtag">Town Hall Meeting · Case study</span>
+          <h3>Greatland Resources: Town Hall Q&amp;A, April 2026</h3>
+          <p class="sub">A live shareholder Q&amp;A for the AIM &amp; ASX-listed gold miner. The previous live Q&amp;A drew 6,000 views.</p>
+          <div class="vstats">
+            <span class="chip"><b>4,026</b> views</span>
+            <span class="chip"><b>80</b> likes</span>
+            <span class="chip"><b>9</b> comments</span>
+          </div>
+          <a class="watch-link" href="https://www.youtube.com/watch?v=sSyRyxzMNnE" target="_blank" rel="noopener">Watch<svg class="arw" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+
+      <!-- Brad George v1 -->
+      <div class="vcard">
+        <a class="poster" href="https://www.youtube.com/watch?v=gVc6f_GQNx8" target="_blank" rel="noopener" aria-label="Watch Brad George interview on YouTube">
+          <img src="https://i.ytimg.com/vi/gVc6f_GQNx8/maxresdefault.jpg" alt="" loading="lazy">
+        </a>
+        <div class="vmeta">
+          <span class="vtag">Ticker TV · CEO interview</span>
+          <h3>Brad George, CEO, Orosur Mining <span style="color:var(--ink-3)">#OMI</span></h3>
+          <p class="sub">A very good response for a junior mining stock.</p>
+          <div class="vstats">
+            <span class="chip"><b>1,600</b> views</span>
+            <span class="chip"><b>36</b> likes</span>
+          </div>
+          <a class="watch-link" href="https://www.youtube.com/watch?v=gVc6f_GQNx8" target="_blank" rel="noopener">Watch<svg class="arw" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+
+      <!-- Gaius King, precious metals -->
+      <div class="vcard">
+        <a class="poster" href="https://www.youtube.com/watch?v=UYHChzpSlFg" target="_blank" rel="noopener" aria-label="Watch Gaius King interview on YouTube">
+          <img src="https://i.ytimg.com/vi/UYHChzpSlFg/maxresdefault.jpg" alt="" loading="lazy">
+        </a>
+        <div class="vmeta">
+          <span class="vtag">Ticker TV · Webinar and Q&amp;A</span>
+          <h3>Precious Metals bubble bursts …</h3>
+          <p class="sub">Resources Analyst Gaius King delivers a slide presentation then takes questions.</p>
+          <div class="vstats">
+            <span class="chip"><b>3,749</b> views</span>
+            <span class="chip"><b>20</b> likes</span>
+          </div>
+          <a class="watch-link" href="https://www.youtube.com/watch?v=UYHChzpSlFg" target="_blank" rel="noopener">Watch<svg class="arw" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+
+      <!-- Investor Summit: Laura Foll -->
+      <div class="vcard ext">
+        <a class="poster" href="https://www.youtube.com/watch?v=CsZSAGyazWY&amp;t=2s" target="_blank" rel="noopener" aria-label="Watch Laura Foll on YouTube">
+          <img src="assets/media/laura-foll-interview.jpg" alt="" loading="lazy">
+        </a>
+        <div class="vmeta">
+          <span class="vtag">Investor Summit · Video + Audio Podcast</span>
+          <h3>Laura Foll, Co-Portfolio Manager, Law Debenture</h3>
+          <p class="sub">Filmed in a 3-camera City / Central London studio.</p>
+          <div class="vstats">
+            <span class="chip"><b>424</b> views</span>
+            <span class="chip"><b>14</b> likes</span>
+          </div>
+          <a class="watch-link" href="https://www.youtube.com/watch?v=CsZSAGyazWY&amp;t=2s" target="_blank" rel="noopener">Watch<svg class="arw" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+
+      <!-- Investor Summit: Stephen Yiu -->
+      <div class="vcard ext">
+        <a class="poster" href="https://www.youtube.com/watch?v=maagueCmQB8" target="_blank" rel="noopener" aria-label="Watch Stephen Yiu on YouTube">
+          <img src="https://i.ytimg.com/vi/maagueCmQB8/maxresdefault.jpg" alt="" loading="lazy">
+        </a>
+        <div class="vmeta">
+          <span class="vtag">Investor Summit · Event interview</span>
+          <h3>Stephen Yiu, Co-Founder, Blue Whale Growth Fund</h3>
+          <p class="sub">Stephen Yiu talks us through his presentation, investment style, and specifically why he is selling defence stocks and buying Uber.</p>
+          <div class="vstats">
+            <span class="chip"><b>271</b> views</span>
+            <span class="chip"><b>9</b> likes</span>
+          </div>
+          <a class="watch-link" href="https://www.youtube.com/watch?v=maagueCmQB8" target="_blank" rel="noopener">Watch<svg class="arw" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+
+    </div>
+    <p class="divider-note">Every interview is released on the Ticker TV YouTube channel and distributed across social media.</p>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="voices">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">In their words</span>
+      <h2>Trusted by IR teams, advisers and investors.</h2>
+    </div>
+    <div class="quotes">
+      <div class="quote">
+        <div class="mark">&ldquo;</div>
+        <p>&ldquo;Copia Digital delivered outstanding support across both our investor relations communications and the organisation of a large-scale town hall event. Their team demonstrated a strong understanding of stakeholder engagement and managed every detail with professionalism. The town hall was seamless, well-produced and highly engaging. We valued Copia Digital's strategic approach, responsiveness and calm execution, and look forward to working with them again.&rdquo;</p>
+        <div class="who">
+          <span class="avatar">RK</span>
+          <div>
+            <div class="name">Rowan Krasnoff</div>
+            <div class="role">Chief Development Officer, Greatland Resources</div>
+          </div>
+        </div>
+      </div>
+      <div class="quote">
+        <div class="mark">&ldquo;</div>
+        <p>&ldquo;Flagstaff believe in the power of IR Video, and we have a long-term working relationship with Donald Leggatt and Ticker TV. Donald delivers effective, in-depth interviews with lots of prior research. He has a good understanding and grasp of the messages the company need to get across, his interviews are user-friendly and well-liked by the investor audience, and he guides each interview to suit the client.&rdquo;</p>
+        <div class="who">
+          <span class="avatar">TT</span>
+          <div>
+            <div class="name">Tim Thompson</div>
+            <div class="role">Partner, Flagstaff Communications</div>
+          </div>
+        </div>
+      </div>
+      <div class="quote yt">
+        <div class="mark">&ldquo;</div>
+        <p>&ldquo;Really good interview. As an investor in both SSIT and SSIC, I found the info very interesting. Also, clearly put with no jargon. Thank you for putting useful questions and letting him (Will Whitehorn, CEO, Seraphim) speak without repeated interruptions.&rdquo;</p>
+        <div class="who">
+          <span class="avatar"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+          <div>
+            <div class="name">@hillstfan3735</div>
+            <div class="role">YouTube comment · Ticker TV audience</div>
+          </div>
+        </div>
+      </div>
+      <div class="quote accent">
+        <div class="mark">&ldquo;</div>
+        <p>Long-term shareholders find these interviews particularly useful, as they invariably include lots of fresh information.</p>
+        <div class="who">
+          <span class="avatar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1v.2h6v-.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg></span>
+          <div>
+            <div class="name">Why IR video works</div>
+            <div class="role">From the Ticker TV approach</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="team" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">The Ticker team</span>
+      <h2>Financial storytellers with a technical edge.</h2>
+    </div>
+    <div class="team-grid">
+      <div class="member">
+        <div class="photo"><img src="assets/team/donald-leggatt.webp" alt="Donald Leggatt" loading="lazy"></div>
+        <div class="info">
+          <h3>Donald Leggatt</h3>
+          <div class="title">Head of IR Media, Copia</div>
+          <p>An established presenter, digital producer and financial journalist who worked at BBC Television, Channel 4 and The Daily Telegraph, and spent a decade at Brunswick, the leading PR house, working with multinational and FTSE 100 clients.</p>
+        </div>
+      </div>
+      <div class="member">
+        <div class="photo"><img src="assets/team/sam-bell.png" alt="Sam Bell" loading="lazy"></div>
+        <div class="info">
+          <h3>Sam Bell</h3>
+          <div class="title">CEO, Copia</div>
+          <p>A technological whizz and a leader in the use of financial AI. Sam created <a href="https://www.ticker.app" target="_blank" rel="noopener">Ticker.app</a>, the retail-investor data website, and is co-founder of the <a href="https://www.investorsummit.co.uk" target="_blank" rel="noopener">Investor Summit</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div class="panel">
+      <div class="grid-bg"></div>
+      <div class="glow"></div>
+      <div class="pricing-copy">
+        <div class="kicker">Packages &amp; pricing</div>
+        <h2>Let's price a <span class="hl">bespoke package</span>.</h2>
+        <p>If you like the sound of what we do, we'd be happy to price a cost-effective bespoke package for you – or one-off work. A package might blend interviews, Fireside Chats, Town Halls and event coverage, or something unique to you. We have the team to make it happen. Ticker works with clients and alongside an agency.</p>
+      </div>
+      <a class="cta" id="mailCta" href="mailto:Donald.leggatt@copiadigital.com?subject=Ticker%20TV%20enquiry" data-gmail="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=Donald.leggatt@copiadigital.com&amp;su=Ticker%20TV%20enquiry">Talk to the Ticker team<svg class="arw" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="top">
+      <div class="col brand">
+        <span class="foot-lockup"><img src="assets/logo-white.svg" alt="Ticker"><span class="tv">TV</span></span>
+        <p>Ticker TV is a full-service IR video &amp; social media package by Copia, the London digital media company.</p>
+      </div>
+      <div class="col">
+        <h4>Explore</h4>
+        <a href="#offer">Services</a>
+        <a href="#work">Case studies</a>
+        <a href="#voices">Testimonials</a>
+        <a href="#team">The team</a>
+      </div>
+      <div class="col">
+        <h4>Elsewhere</h4>
+        <a href="https://www.ticker.app" target="_blank" rel="noopener">www.ticker.app</a>
+        <a href="https://www.investorsummit.co.uk" target="_blank" rel="noopener">www.investorsummit.co.uk</a>
+        <a href="https://www.youtube.com/@Ticker_TV" target="_blank" rel="noopener">Ticker TV on YouTube</a>
+      </div>
+      <div class="col social">
+        <h4>Follow</h4>
+        <div class="soc-row">
+          <span class="soc-name">Ticker</span>
+          <a href="https://x.com/TickerOfficial" target="_blank" rel="noopener" aria-label="Ticker on X"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          <a href="https://www.linkedin.com/company/tickerapp/" target="_blank" rel="noopener" aria-label="Ticker on LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg></a>
+        </div>
+        <div class="soc-row">
+          <span class="soc-name">Investor Summit</span>
+          <a href="https://x.com/_investorsummit" target="_blank" rel="noopener" aria-label="Investor Summit on X"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          <a href="https://www.linkedin.com/company/investor-summit/" target="_blank" rel="noopener" aria-label="Investor Summit on LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="base">
+      <span>© Copia Digital · Ticker TV</span>
+      <span>IR Video &amp; Social Media</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var cta = document.getElementById('mailCta');
+    if(!cta) return;
+    cta.addEventListener('click', function(){
+      // let the default mailto attempt to open the visitor's mail app;
+      // if the tab never loses focus, assume no mail client and open Gmail.
+      var gmail = cta.dataset.gmail, left = false;
+      var mark = function(){ left = true; };
+      window.addEventListener('blur', mark, {once:true});
+      document.addEventListener('visibilitychange', mark, {once:true});
+      setTimeout(function(){
+        window.removeEventListener('blur', mark);
+        document.removeEventListener('visibilitychange', mark);
+        if(!left && document.visibilityState === 'visible' && document.hasFocus()){
+          window.open(gmail, '_blank', 'noopener');
+        }
+      }, 1200);
+    });
+  })();
+</script>
+</body>
+</html>

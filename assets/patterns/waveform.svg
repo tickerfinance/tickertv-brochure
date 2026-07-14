@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="144" height="96" viewBox="0 0 144 96">
+  <!-- Waveform (podcast) — repeat. Symmetric rounded bars on a centre line; one sine period, seamless on X. -->
+  <rect x="3.0" y="22.0" width="6" height="52.0" rx="3" fill="#FCE300"/>
+  <rect x="15.0" y="12.0" width="6" height="72.0" rx="3" fill="#FCE300"/>
+  <rect x="27.0" y="4.7" width="6" height="86.6" rx="3" fill="#FCE300"/>
+  <rect x="39.0" y="2.0" width="6" height="92.0" rx="3" fill="#FCE300"/>
+  <rect x="51.0" y="4.7" width="6" height="86.6" rx="3" fill="#FCE300"/>
+  <rect x="63.0" y="12.0" width="6" height="72.0" rx="3" fill="#FCE300"/>
+  <rect x="75.0" y="22.0" width="6" height="52.0" rx="3" fill="#FCE300"/>
+  <rect x="87.0" y="32.0" width="6" height="32.0" rx="3" fill="#FCE300"/>
+  <rect x="99.0" y="39.3" width="6" height="17.4" rx="3" fill="#FCE300"/>
+  <rect x="111.0" y="42.0" width="6" height="12.0" rx="3" fill="#FCE300"/>
+  <rect x="123.0" y="39.3" width="6" height="17.4" rx="3" fill="#FCE300"/>
+  <rect x="135.0" y="32.0" width="6" height="32.0" rx="3" fill="#FCE300"/>
+  <line x1="0" y1="48.0" x2="144" y2="48.0" stroke="#FCE300" stroke-width="1" opacity="0.25"/>
+</svg>

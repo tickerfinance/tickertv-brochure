@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96">
+  <!-- Movers — repeat. Risers ▲ / fallers ▼ triangles in a checkerboard; seamless both axes. -->
+  <g fill="#FCE300">
+    <!-- riser (up) -->
+    <path d="M24 13 L36 35 L12 35 Z"/>
+    <!-- faller (down) -->
+    <path d="M72 35 L84 13 L60 13 Z"/>
+    <!-- faller (down) -->
+    <path d="M24 83 L36 61 L12 61 Z"/>
+    <!-- riser (up) -->
+    <path d="M72 61 L84 83 L60 83 Z"/>
+  </g>
+</svg>

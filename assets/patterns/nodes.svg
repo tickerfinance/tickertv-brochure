@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <!-- Nodes — repeat. Connected data network (Intelligence pillar). Corner nodes shared across tiles; seamless both axes. -->
+  <g stroke="#FCE300">
+    <!-- edges: centre node to shared corners -->
+    <g stroke-width="1" opacity="0.4">
+      <line x1="40" y1="40" x2="0" y2="0"/>
+      <line x1="40" y1="40" x2="80" y2="0"/>
+      <line x1="40" y1="40" x2="0" y2="80"/>
+      <line x1="40" y1="40" x2="80" y2="80"/>
+    </g>
+  </g>
+  <g fill="#FCE300">
+    <!-- corner nodes (shared) -->
+    <circle cx="0" cy="0" r="2.6"/><circle cx="80" cy="0" r="2.6"/>
+    <circle cx="0" cy="80" r="2.6"/><circle cx="80" cy="80" r="2.6"/>
+    <!-- centre node -->
+    <circle cx="40" cy="40" r="3.4"/>
+  </g>
+</svg>

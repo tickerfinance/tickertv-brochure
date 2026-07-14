@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <!-- Tick Grid — repeat. Registration crosses at grid nodes. Seamless both axes. -->
+  <g stroke="#FCE300" stroke-width="0.8" opacity="0.5">
+    <line x1="-4" y1="0" x2="4" y2="0"/><line x1="0" y1="-4" x2="0" y2="4"/>
+    <line x1="36" y1="0" x2="44" y2="0"/><line x1="40" y1="-4" x2="40" y2="4"/>
+    <line x1="-4" y1="40" x2="4" y2="40"/><line x1="0" y1="36" x2="0" y2="44"/>
+    <line x1="36" y1="40" x2="44" y2="40"/><line x1="40" y1="36" x2="40" y2="44"/>
+    <line x1="16" y1="20" x2="24" y2="20"/><line x1="20" y1="16" x2="20" y2="24"/>
+  </g>
+  <g fill="#FCE300" opacity="0.4"><circle cx="20" cy="0" r="0.9"/><circle cx="0" cy="20" r="0.9"/><circle cx="40" cy="20" r="0.9"/><circle cx="20" cy="40" r="0.9"/></g>
+</svg>
