@@ -14,7 +14,7 @@ the output directory is the repo root. All deploys are automatic — never a man
 
 | Push to | Deploys to | URL |
 |---|---|---|
-| **`main`** | Production | `*.pages.dev` (or custom domain) |
+| **`main`** | Production | https://tv.ticker.app |
 | **any other branch** | Preview | `https://<branch>.tickertv-brochure.pages.dev` |
 
 Cloudflare gives Vercel-style previews out of the box: **every non-`main` branch gets its own live
