@@ -1,4 +1,4 @@
-# Ticker TV brochure
+# Ticker TV Microsite
 
 Standalone marketing/brochure site for **Ticker TV** — Copia's IR video & social media package
 (CEO interviews, Fireside Chats, Town Hall Q&As, event coverage for listed companies and fund
